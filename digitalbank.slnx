@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Capa de datos/Data.csproj" />
+  <Project Path="ProyectoWEB/WebClient.csproj" Id="b58ddbd6-ed07-47eb-9ab7-4d25d09a6635" />
+  <Project Path="WebAPI/WebAPI.csproj" Id="5c000be7-2ee8-4924-8ce6-9c3194536d2b" />
+</Solution>

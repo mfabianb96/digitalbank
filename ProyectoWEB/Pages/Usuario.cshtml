@@ -1,0 +1,35 @@
+﻿@page "{id?}"
+@model ProyectoWEB.Pages.UsuarioModel
+@{
+    ViewData["Title"] = Model.Usuario.Id == 0 ? "Crear Usuario" : "Editar Usuario";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+
+<form method="post" asp-page="/Usuario">
+
+    <input type="hidden" asp-for="Usuario.Id" />
+
+    <div class="form-group">
+        <label>Nombre</label>
+        <input asp-for="Usuario.Nombre" class="form-control" placeholder="Ingrese su nombre" required/>
+    </div>
+
+    <div class="form-group mt-3">
+        <label>Fecha de nacimiento</label>
+        <input asp-for="Usuario.FechaNacimiento" type="date" class="form-control" required />
+    </div>
+
+    <div class="form-group mt-3">
+        <label>Sexo</label>
+        <select asp-for="Usuario.Sexo" class="form-control" required>
+            <option value="">Seleccione...</option>
+            <option value="M">Masculino</option>
+            <option value="F">Femenino</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-success mt-4">Guardar</button>
+
+</form>

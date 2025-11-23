@@ -24,14 +24,16 @@ public class UsuarioModel : PageModel
         {
             await _client.PostAsJsonAsync("Usuario", Usuario);
             _alert.Success("Usuario creado correctamente");
+            return Page();
         }
         else
         {
             await _client.PutAsJsonAsync($"Usuario", Usuario);
             _alert.Success("Usuario modificado correctamente");
+            return RedirectToPage("/UsuarioConsulta");
         }
 
-        return RedirectToPage("/UsuarioConsulta");
+        
     }
 
     public async Task<IActionResult> OnGet(int? id)

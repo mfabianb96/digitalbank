@@ -1,6 +1,4 @@
-﻿using Capa_de_datos.Modelos;
-using Capa_de_datos.Repository;
-using Microsoft.AspNetCore.Mvc;
+﻿
 
 namespace WebAPI.Controllers;
 

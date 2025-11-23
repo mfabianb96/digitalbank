@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Capa_de_datos.Modelos;
+﻿namespace Data.Modelos;
 
 public class Usuario
 {
@@ -10,6 +8,6 @@ public class Usuario
 
     public DateTime? FechaNacimiento { get; set; }
 
-    public string Sexo { get; set; }           
+    public string Sexo { get; set; }
 }
 
